@@ -1,4 +1,4 @@
-# 🏥 Clinical Risk Prediction Dashboard
+# Clinical Risk Prediction Dashboard
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 Clinical Problem
+## Clinical Problem
 
 **30-day hospital readmissions** represent a critical challenge in healthcare:
 - Affect **1 in 5** Medicare patients
@@ -24,15 +24,15 @@ Early identification of high-risk patients enables **targeted interventions** su
 
 ---
 
-## 💡 Solution
+## Solution
 
 An **end-to-end machine learning system** that:
 
-1. ✅ Analyzes **100,000+ patient encounters** with 20+ clinical features
-2. ✅ Predicts readmission risk using **XGBoost classification**
-3. ✅ Provides **interactive dashboard** for clinicians
-4. ✅ Offers **actionable recommendations** for care teams
-5. ✅ Visualizes **population-level trends** for administrators
+1. Analyzes **100,000+ patient encounters** with 20+ clinical features
+2. Predicts readmission risk using **XGBoost classification**
+3. Provides **interactive dashboard** for clinicians
+4. Offers **actionable recommendations** for care teams
+5. Visualizes **population-level trends** for administrators
 
 ---
 
@@ -48,7 +48,7 @@ An **end-to-end machine learning system** that:
 
 ---
 
-## 📊 Key Results
+## Results
 
 ### Model Performance
 - **ROC-AUC**: 0.58
@@ -77,7 +77,7 @@ An **end-to-end machine learning system** that:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -174,8 +174,8 @@ clinical-risk-prediction-dashboard/
 │   │   ├── roc_curve.png
 │   │   ├── feature_importance.png
 │   │   └── model_metrics.csv
-│   ├── powerbi/                      # PowerBI files (optional)
-│   └── tableau/                      # Tableau files (optional)
+│   ├── powerbi/                      
+│   └── tableau/                      
 │
 └── docs/
     └── (additional documentation)
@@ -183,7 +183,7 @@ clinical-risk-prediction-dashboard/
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Interactive Dashboard
 The Streamlit dashboard provides real-time risk prediction with clinical recommendations.
@@ -228,7 +228,7 @@ Population-level analytics enable:
 
 ---
 
-## 🧪 Model Development Process
+## Model Development Process
 
 1. **Data Acquisition**: 101,766 encounters from UCI Diabetes 130-US Hospitals dataset
 2. **Data Cleaning**: Removed duplicates, missing data >40%, resulting in 69,668 unique patients
@@ -240,7 +240,7 @@ Population-level analytics enable:
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is developed for **educational and research purposes only**. It demonstrates the application of machine learning to healthcare analytics and should not be used for actual clinical decision-making without:
 
@@ -253,7 +253,7 @@ Always defer to clinical judgment and established guidelines.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -265,26 +265,26 @@ Contributions are welcome! Please:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Dagim Amare, MD**
-- 🩺 Medical Doctor
-- 📊 MSc Health Data Science Candidate
-- 💼 Healthcare Data Scientist
+- Medical Doctor
+- MSc Health Data Science Candidate
+- Healthcare Data Scientist
 
 **Connect:**
 - 🔗 [LinkedIn](https://linkedin.com/in/dagim-amare-md)
-- 🐙 [GitHub](https://github.com/dagimamare)
+- [GitHub](https://github.com/dagimamare)
 
 ---
 
-## 🙏 Acknowledgments
+##
 
 - **Dataset**: [UCI Machine Learning Repository - Diabetes 130-US Hospitals](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
 - **Inspiration**: CMS Hospital Readmission Reduction Program
@@ -292,7 +292,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 📈 Future Improvements
+## Improvements
 
 - [ ] Deploy to cloud (AWS/Azure)
 - [ ] Add real-time prediction API (FastAPI/Flask)
@@ -302,30 +302,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - [ ] Add explainable AI (SHAP values)
 - [ ] Improve model performance with hyperparameter tuning
 - [ ] Add longitudinal patient tracking
-
----
-
-## 📚 How to Use
-
-### For Healthcare Providers
-
-1. **Launch Dashboard**: Run `streamlit run dashboard/app.py`
-2. **Enter Patient Data**: Input clinical parameters in the sidebar
-3. **Review Risk Score**: Check the readmission probability
-4. **Follow Recommendations**: Implement suggested interventions for high-risk patients
-
-### For Data Scientists
-
-1. **Explore Code**: Review `src/` modules for preprocessing and modeling
-2. **Retrain Model**: Modify `scripts/train_model.py` with new data or parameters
-3. **Add Features**: Extend `src/data_preprocessing.py` with additional clinical features
-4. **Evaluate Performance**: Use `src/model.py` evaluation methods
-
-### For Administrators
-
-1. **Review Metrics**: Check model performance in dashboard "Model Insights" tab
-2. **Analyze Trends**: Use visualizations to identify high-risk populations
-3. **Allocate Resources**: Deploy interventions based on risk stratification
 
 ---
 
